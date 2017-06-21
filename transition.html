@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./3d.css">
+</head>
+
+<body>
+    <article id="tablet">
+        <img src="tablet.png" alt="tablet">
+        <h1>Comprehensam</h1>
+        <p>Mel homero labores ce maluisset ... aliquam te.</p>
+        <a href="#wifi">Next</a>
+    </article>
+
+    <article id="wifi">
+        <img src="wifi.png" alt="wifi">
+        <h1>Adversarium</h1>
+        <p>Ea qui graece facilisi persequeris ... similique ex qui.</p>
+        <a href="#tablet">Next</a>
+    </article>
+
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('a').click(function (e) {
+                e.preventDefault()
+                $('#tablet').toggleClass('move')
+                $('#wifi').toggleClass('move')
+            })
+        })
+
+    </script>
+</body>
+
+</html>

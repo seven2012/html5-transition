@@ -1,0 +1,92 @@
+/*2d*/
+html, body{
+	height:100%;
+}
+body {
+	margin:0;
+	padding:0;
+	font-family:sans-serif;
+	text-align:center;
+	color:#FFF;
+	overflow:hidden;
+	position:relative;
+}
+article{
+	position: absolute;
+	width:100%;
+	height:100%;
+	padding:100px;
+	box-sizing:border-box;
+	-webkit-transition:all 1s ease-in-out;
+	transition:all 1s ease-in-out;
+	top:0;
+}
+#tablet{
+	background:#4ac4aa;
+}
+#wifi{
+	background:#ea5634;
+}
+h1{
+	font-size:4em;
+	border-bottom:1px solid rgba(255,255,255,.2);
+	padding-bottom:30px;
+}
+p{
+	color:rgba(255,255,255,.8);
+	margin-bottom:30px;
+}
+a{
+	font-size:1.5em;
+	padding:5px 50px;
+	border:1px solid #FFF;
+	border-radius:4px;
+	text-decoration:none;
+}
+
+/*左右动效
+#tablet{
+	left:0;
+}
+#wifi{
+	left:100%;
+}
+#tablet.move{
+	left:-100%;
+}
+#wifi.move{
+	left:0;
+}
+*/
+
+/*上下动效
+#tablet{
+	top:0;
+}
+#wifi{
+	top:100%;
+}
+#tablet.move{
+	top:-100%;
+}
+#wifi.move{
+	top:0;
+}
+*/
+/*缩放动效*/
+#tablet{
+	-webkit-transform:scale(1,1);
+	transform:scale(1,1);
+}
+#wifi{
+	-webkit-transform:scale(0,0);
+	transform:scale(0,0);
+}
+#tablet.move{
+	-webkit-transform:scale(0,0);
+	transform:scale(0,0);
+}
+#wifi.move{
+	-webkit-transform:scale(1,1);
+	transform:scale(1,1);
+}
